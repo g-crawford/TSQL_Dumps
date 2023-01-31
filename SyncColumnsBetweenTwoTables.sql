@@ -28,7 +28,7 @@ DECLARE @Select	AS VARCHAR(MAX) = '
 	END AS MaxCharacterLength
 	,c.is_nullable								as IsNullable
 	,CAST(c.precision AS VARCHAR(MAX))			as Precision
-	,CAST(c.precision AS VARCHAR(MAX))			as [Scale]
+	,CAST(c.scale AS VARCHAR(MAX))			as [Scale]
 '
 DECLARE @Into AS VARCHAR(4) = 'INTO' 
 DECLARE @TempTableName AS VARCHAR(MAX)
